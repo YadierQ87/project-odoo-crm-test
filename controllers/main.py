@@ -8,7 +8,6 @@ from odoo.http import request
 
 _logger = logging.getLogger(__name__)
 
-
 class CrmSocialProfile(http.Controller):
     @http.route(['/crm/customers/', '/crm/customers/<int:page>'], auth='public', website=True)
     def index(self, page=1, search='', **kw):
